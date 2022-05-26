@@ -48,6 +48,7 @@ module.exports.getAccessToken = async (event) => {
       client_secret,
       redirect_uris[0]
     );
+    console.log("Log on 51")
     
     const code = decodeURIComponent(`${event.pathParameters.code}`);
   
