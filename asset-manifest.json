@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/CRA_CFT/static/css/main.073c9b0a.css",
-    "main.js": "/CRA_CFT/static/js/main.e8d5cf77.js",
+    "main.js": "/CRA_CFT/static/js/main.b2d99f38.js",
     "static/js/787.4b564826.chunk.js": "/CRA_CFT/static/js/787.4b564826.chunk.js",
     "service-worker.js": "/CRA_CFT/service-worker.js",
-    "static/media/logo.svg": "/CRA_CFT/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/CRA_CFT/index.html",
     "main.073c9b0a.css.map": "/CRA_CFT/static/css/main.073c9b0a.css.map",
-    "main.e8d5cf77.js.map": "/CRA_CFT/static/js/main.e8d5cf77.js.map",
+    "main.b2d99f38.js.map": "/CRA_CFT/static/js/main.b2d99f38.js.map",
     "787.4b564826.chunk.js.map": "/CRA_CFT/static/js/787.4b564826.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e8d5cf77.js"
+    "static/js/main.b2d99f38.js"
   ]
 }
