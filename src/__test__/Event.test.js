@@ -26,7 +26,7 @@ describe('<Event /> component', () => {
         expect(EventWrapper.find('.start-date')).toHaveLength(1);
     })
 
-    //collapse button
+   
 
     test('render the show details button', () => {
         expect(EventWrapper.find('.show-details')).toHaveLength(1);
