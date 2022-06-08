@@ -26,16 +26,28 @@ class App extends Component {
   componentWillUnmount(){
     this.mounted = false;
   }
-  updateEvents = (location) => {
+
+  updateEvents = (location, eventCount) => {
+    if (eventCount === undefined) {
+        eventCount = this.state.numberOfEvents;
+    } else(
+        this.setState({ numberOfEvents: eventCount })
+    )
+    if (location === undefined) {
+        location = this.state.locationSelected;
+    }
     getEvents().then((events) => {
-      const locationEvents = (location === 'all') ?
-        events :
-        events.filter((event) => event.location === location);
-      this.setState({
-        events: locationEvents
-      });
-    });
-  }
+        let locationEvents = location === "Everywhere" ?
+            events :
+            events.filter((event) => event.location === location);
+        this.setState({
+            events: locationEvents.slice(0, eventCount),
+            numberOfEvents: eventCount,
+            locationSelected: location,
+        });
+    })
+}
+ 
 
   render() {
     return (

@@ -37,7 +37,7 @@ const getToken = async (code) => {
     try {
         const encodeCode = encodeURIComponent(code);
 
-        const response = await fetch( 'https://3wsxk6dnx7.execute-api.eu-central-1.amazonaws.com/dev/api/token' + '/' + encodeCode);
+        const response = await fetch( `https://3wsxk6dnx7.execute-api.eu-central-1.amazonaws.com/dev/api/token/${encodeCode}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
@@ -48,16 +48,6 @@ const getToken = async (code) => {
         error.json();
     }
 }
-
-
-/**
- *
- * @param {*} events:
- * The following function should be in the “api.js” file.
- * This function takes an events array, then uses map to create a new array with only locations.
- * It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.
- * The Set will remove all duplicates from the array.
- */
 
 export const extractLocations = (events) => {
     var extractLocations = events.map((event) => event.location);
@@ -78,7 +68,7 @@ export const getEvents = async () => {
   
     if (token) {
       removeQuery();
-      const url = 'https://3wsxk6dnx7.execute-api.eu-central-1.amazonaws.com/dev/api/token' + '/' + token;
+      const url = `https://3wsxk6dnx7.execute-api.eu-central-1.amazonaws.com/dev/api/token/${token}`;
       const result = await axios.get(url);
       if (result.data) {
         var locations = extractLocations(result.data.events);
