@@ -24,7 +24,6 @@ defineFeature(feature, test => {
         then('the user should see the list of upcoming events.', () => {
             AppWrapper.update();
             expect(AppWrapper.find('.event')).toHaveLength(mockData.length);
-            
         });
       });
     
@@ -49,8 +48,8 @@ defineFeature(feature, test => {
     
       test('User can select a city from the suggested list', ({ given, and, when, then }) => {
         let AppWrapper;
-        given('user was typing “Berlin” in the city textbox', () => {
-            AppWrapper = mount(<App />);
+        given('user was typing “Berlin” in the city textbox', async () => {
+            AppWrapper = await mount(<App />);
             AppWrapper.find('.city').simulate('change', { target: { value: 'Berlin' } });
 
         });
