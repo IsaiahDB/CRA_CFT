@@ -1,13 +1,15 @@
+
 import puppeteer from 'puppeteer';
+jest.useFakeTimers();
 
 describe('show/hide an event details', () => {
     let page;
     let browser;
     beforeAll(async () => {
-        jest.setTimeout(60000);
+        
         browser = await puppeteer.launch();
         page = await browser.newPage();
-        await page.goto('http://localhost:3000/');
+        await page.goto('http://localhost:3000/CRA_CFT');
         await page.waitForSelector('.event');
     });
 
