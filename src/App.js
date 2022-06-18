@@ -1,9 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import './App.css';
-import CitySearch from './CitySearch';
-import EventList from './EventList';
-import NumberOfEvents from './NumberOfEvents';
+import CitySearch from './components/CitySearch/CitySearch';
+import EventList from './components/EventList/EventList';
+import NumberOfEvents from './components/NumberOfEvents/NumberOfEvents';
 import { getEvents, extractLocations, checkToken } from './api';
 import './nprogress.css';
 

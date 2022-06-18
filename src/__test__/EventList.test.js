@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import EventList from '../EventList';
-import Event from '../Event';
+import EventList from '../components/EventList/EventList.jsx';
+import Event from '../components/Event/Event.jsx';
 import { mockData } from '../mock-data';
 
 

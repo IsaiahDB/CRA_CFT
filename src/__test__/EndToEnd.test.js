@@ -8,12 +8,12 @@ describe('show/hide an event details', () => {
     beforeAll(async () => { 
             browser = await puppeteer.launch({
                 headless: false,
-                slowMo: 250, // slow down by 250ms
-                ignoreDefaultArgs: ['--disable-extensions'] // ignores default setting that causes timeout errors
+                slowMo: 250, 
+                ignoreDefaultArgs: ['--disable-extensions'] 
             });
         page = await browser.newPage();
-        await page.goto('http://localhost:3000/CRA_CFT');
-        await page.waitForSelector('.event');
+         await page.goto('http://localhost:3000/');
+         await page.waitForSelector('.event');
     });
 
     test('An event element is collapsed by default', async () => {
