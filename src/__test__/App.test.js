@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import App from '../App';
+import App from '../components/App/App.jsx';
 import EventList from '../components/EventList/EventList.jsx';
 import CitySearch from '../components/CitySearch/CitySearch.jsx';
 import NumberOfEvents from '../components/NumberOfEvents/NumberOfEvents.jsx';
