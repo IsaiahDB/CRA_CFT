@@ -5,7 +5,8 @@ class NumberOfEvents extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      numberOfEvents: 32
+      numberOfEvents: 32,
+      errorText: ''
     };
 }
 
@@ -28,7 +29,7 @@ class NumberOfEvents extends Component {
   render() {
     return (
       <div className="numberOfEvents">
-        <ErrorAlert id='errorAlert' text={this.state.errorText} />
+        <ErrorAlert text={this.state.errorText} />
         <input 
           type="number"
           calssname="numberChange"
