@@ -1,11 +1,12 @@
 import React from 'react';
 import { Component } from 'react';
 import './App.css';
-import CitySearch from './components/CitySearch/CitySearch';
-import EventList from './components/EventList/EventList';
-import NumberOfEvents from './components/NumberOfEvents/NumberOfEvents';
-import { getEvents, extractLocations, checkToken } from './api';
+import CitySearch from './components/CitySearch/CitySearch.jsx';
+import EventList from './components/EventList/EventList.jsx';
+import NumberOfEvents from './components/NumberOfEvents/NumberOfEvents.jsx';
+import { getEvents, extractLocations, checkToken } from './api.js';
 import './nprogress.css';
+import { AlertUserOffline } from './components/Alert';
 
 
 class App extends Component {
@@ -32,7 +33,19 @@ class App extends Component {
         }
       });
     }
+
+    if (!navigator.onLine) {
+      this.setState({
+        offlineText:
+        'Your are currently offline. The displayed events might not be up to date.'
+      });
+    } else {
+      this.setState({
+        offlineText: ''
+      });
+    }
   }
+
 
 
   componentWillUnmount() {
@@ -78,7 +91,7 @@ getData = () => {
  
 
   render() {
-    
+    const { offlineText } = this.state;
     return (
       <div className="App">
         <h1>Meet App</h1>
@@ -91,6 +104,7 @@ getData = () => {
         updateNumberOfEvents={this.updateNumberOfEvents}
       />
       <EventList events={this.state.events} />
+      <AlertUserOffline text={offlineText} />
       </div>
     )}
 }
