@@ -14,11 +14,11 @@ class NumberOfEvents extends Component {
     if (value < 0 || value > 32) {
       this.setState({
         numberOfEvents: '',
+        errorText: 'Number should be no larger than 32 no lower than 1. No Negative numbers'
       });
     } else {
       this.setState({
-        numberOfEvents: value,
-        errorText: ''
+        numberOfEvents: value
       });
     }
     this.props.updateNumberOfEvents(value);
