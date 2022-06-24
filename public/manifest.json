@@ -1,6 +1,6 @@
 {
-  "short_name": "CRA_CFT",
-  "name": "CRA_CFT",
+  "short_name": "meet",
+  "name": "meet",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,13 +9,13 @@
       "purpose": "any maskable"
     },
     {
-      "src": "logo192.png",
+      "src": "meet-app-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "meet-app-512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
