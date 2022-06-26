@@ -1,27 +1,27 @@
 {
-  "short_name": "meet",
-  "name": "meet",
+  "short_name": "CRA_CFT",
+  "name": "CRA_CFT",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon",
-      "purpose": "any maskable"
+      "type": "image/x-icon"
+     
     },
     {
       "src": "meet-app-192.png",
       "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
+      "sizes": "192x192"
+     
     },
     {
       "src": "meet-app-512.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
+      "sizes": "512x512"
+      
     }
   ],
-  "start_url": ".",
+  "start_url": "http://localhost:3000/CRA_CFT/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
