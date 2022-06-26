@@ -1,6 +1,6 @@
 {
-  "short_name": "meet",
-  "name": "meet",
+  "short_name": "CRA_CFT",
+  "name": "CRA_CFT",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,7 +21,7 @@
       
     }
   ],
-  "start_url": ".",
+  "start_url": "http://localhost:3000/CRA_CFT/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
