@@ -1,7 +1,12 @@
 .App {
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
+.graphSection {
+  display: flex;
+}
   .App-logo {
     height: 40vmin;
     pointer-events: none;

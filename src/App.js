@@ -97,7 +97,7 @@ getData = () => {
     return (
       <div className="App">
         <h1>Meet App</h1>
-        <EventGenre events={events} />
+        <div className='graphSection'>
         <ResponsiveContainer height={400} >
           <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20,}}>
             <CartesianGrid />
@@ -107,6 +107,8 @@ getData = () => {
             <Scatter data={this.getData()} fill="#8884d8" />
           </ScatterChart>
         </ResponsiveContainer> 
+        <EventGenre events={events} />
+        </div>
       <CitySearch
         locations={locations}
         updateEvents={this.updateEvents}

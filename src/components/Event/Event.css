@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=Event.css.map */
+.event {
+  border-style: solid;
+  border-color: black;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+}
+
+.details-button {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Event.css.map */
